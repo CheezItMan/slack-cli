@@ -1,0 +1,133 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=<SLACK_API_KEY>&text=hiya&channel=C01ABK51G14
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Oct 2020 01:38:38 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - c2b960a8693f906ff857c859032c8078
+      X-Oauth-Scopes:
+      - incoming-webhook,users:read,channels:read,groups:read,im:read,mpim:read,chat:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '318'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Via:
+      - haproxy-www-p1c0,haproxy-edge-pdx-u22p
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"C01ABK51G14","ts":"1601775518.000700","message":{"bot_id":"B01BGQTRBJ6","type":"message","text":"hiya","user":"U01BH1HAE0K","ts":"1601775518.000700","team":"T016J51T03T","bot_profile":{"id":"B01BGQTRBJ6","deleted":false,"name":"CheezItBot","updated":1601260480,"app_id":"A01B223T8RM","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"T016J51T03T"}}}'
+  recorded_at: Sun, 04 Oct 2020 01:38:39 GMT
+- request:
+    method: post
+    uri: https://slack.com/api/chat.postMessage
+    body:
+      encoding: UTF-8
+      string: token=<SLACK_API_KEY>&text=hello&channel=C01ABK51G14
+    headers:
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Sun, 04 Oct 2020 01:38:48 GMT
+      Server:
+      - Apache
+      X-Slack-Req-Id:
+      - 6533f2668c26ef4cc134783232639f19
+      X-Oauth-Scopes:
+      - incoming-webhook,users:read,channels:read,groups:read,im:read,mpim:read,chat:write
+      Access-Control-Expose-Headers:
+      - x-slack-req-id, retry-after
+      Access-Control-Allow-Origin:
+      - "*"
+      X-Slack-Backend:
+      - r
+      X-Content-Type-Options:
+      - nosniff
+      Expires:
+      - Mon, 26 Jul 1997 05:00:00 GMT
+      Cache-Control:
+      - private, no-cache, no-store, must-revalidate
+      X-Xss-Protection:
+      - '0'
+      X-Accepted-Oauth-Scopes:
+      - chat:write
+      Access-Control-Allow-Headers:
+      - slack-route, x-slack-version-ts, x-b3-traceid, x-b3-spanid, x-b3-parentspanid,
+        x-b3-sampled, x-b3-flags
+      Vary:
+      - Accept-Encoding
+      Pragma:
+      - no-cache
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubDomains; preload
+      Referrer-Policy:
+      - no-referrer
+      Content-Length:
+      - '319'
+      Content-Type:
+      - application/json; charset=utf-8
+      X-Via:
+      - haproxy-www-nu22,haproxy-edge-pdx-1nke
+    body:
+      encoding: ASCII-8BIT
+      string: '{"ok":true,"channel":"C01ABK51G14","ts":"1601775528.000800","message":{"bot_id":"B01BGQTRBJ6","type":"message","text":"hello","user":"U01BH1HAE0K","ts":"1601775528.000800","team":"T016J51T03T","bot_profile":{"id":"B01BGQTRBJ6","deleted":false,"name":"CheezItBot","updated":1601260480,"app_id":"A01B223T8RM","icons":{"image_36":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_36.png","image_48":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/bot_48.png","image_72":"https:\/\/a.slack-edge.com\/80588\/img\/plugins\/app\/service_72.png"},"team_id":"T016J51T03T"}}}'
+  recorded_at: Sun, 04 Oct 2020 01:38:48 GMT
+recorded_with: VCR 6.0.0
